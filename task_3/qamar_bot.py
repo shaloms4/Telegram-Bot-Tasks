@@ -3,10 +3,7 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes
 
-# Load environment variables from .env file
 load_dotenv()
-
-# Get the token from the environment variable
 TOKEN = os.getenv('TELEGRAM_TOKEN')
 
 # Define a function for the /start command
